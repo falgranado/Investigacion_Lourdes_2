@@ -6,31 +6,48 @@
         <title>ResearchAnimation</title>
 		
 		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-		<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 		  
 		<link rel="stylesheet" href="css/structure.css">
 		<script src="js/index.js"></script>
 		
-		
+	
 		</head>
 <body>
  
- <div class="tree" id="tree"> 
+ <div class="tree" id="tree" > 
 	  <ul>
 	  	<li><p class="medical_devices" id="medical_devices">Medical Devices</p>
 	  		<ul class="medical_devices_list" id="medical_devices_list">
-	  			<li><p class="product_development" id='product_development'>Product development &amp; introduction process</p>
+	  			<li class="medical_devices_child"><p  id='product_development'>Product development &amp; introduction process</p>
 	  				<ul class="product_development_list" id="product_developement_list">
-	  					<li class="product_development_child" id="product_definition_list"><p id="product_definition">Product definition process</p></li><!--product definition-->
+	  					<li class="product_development_child"><p id="product_definition">Product definition process</p>
+	  						<ul class="product_definition_list" id="product_definition_list">
+	  							<li class="product_definition_child"><p id="clinical_needs" >Clinical needs identification process</p>
+	  								<ul class="clinical_needs_list" id="clinical_needs_list">
+	  									<li><p class="clinical_needs_child" id="customers">Customers</p></li>
+	  									<li><p class="clinical_needs_child" id="company">Company</p></li>
+	  								</ul>
+	  							</li><!--Clinical Needs-->
+	  							<li class="product_definition_child"><p id="competencies_analysis">Compentencies analysis</p></li><!--Competencies-->
+	  							<li class="product_definition_child"><p id="customer_analysis">Customer analysis</p></li><!--Customer analysis-->
+	  							<li class="product_definition_child"><p id="market_analysis">Market analysis</p></li><!--Market analysis-->
+	  							<li class="product_definition_child"><p id="technology_analysis">Technology analysis</p></li><!--Technology analysis-->
+	  							<li class="product_definition_child"><p id="competitive_analysis">Competitive analysis</p></li><!--Competitive analysis-->
+	  							<li class="product_definition_child"><p id="regulatory_analysis">Regulatory analysis</p></li><!--Regulatory analysis-->
+	  							<li class="product_definition_child"><p id="legal_analysis">Legal/IP analysis</p></li><!--Legal/IP analysis-->
+	  							<li class="product_definition_child"><p id="reimbursement_strategy">Reimbursement strategy</p></li><!--Reimbursement strategy-->
+	  							<li class="product_definition_child"><p id="financial_analysis">Financial analysis</p></li><!--Financial analysis-->
+	  						</ul>
+	  					</li><!--product definition-->
 	  					<li class="product_development_child" id="design_process_list"><p id="design_process">Design process</p></li><!-- design process -->
 	  					<li class="product_development_child" id="risk_management_list"><p id="risk_management">Risk management process</p></li><!-- risk management process -->
 	  					<li class="product_development_child" id="production_planning_list"><p id="production_planning">Production planning process</p></li><!--product planning process -->
+	  					<li class="product_development_child" id="market_introduction_list"><p id="market_introduction">Market introduction &amp; post-launch process</p></li>
 	  				</ul>
 	  			</li><!--PD-->
-	  			<li class="fda" id='fda'><p>FDA</p></li><!--FDA-->
-	  			<li class="standards" id="standards"><p>Standards</p></li><!--Standards List -->
-	  			<li class="uspto" id="uspto"><p>USPTO</p></li><!--USPTO List-->
+	  			<li class="medical_devices_child" id='fda'><p>FDA</p></li><!--FDA-->
+	  			<li class="medical_devices_child" id="standards"><p>Standards</p></li><!--Standards List -->
+	  			<li class="medical_devices_child" id="uspto"><p>USPTO</p></li><!--USPTO List-->
 	  			
 	  			
 	  		</ul>
